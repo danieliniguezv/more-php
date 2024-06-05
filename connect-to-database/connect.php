@@ -13,11 +13,6 @@ $PASSWORD = getenv('DB_PASSWORD');
 $DATABASE = getenv('DB_NAME');
  */
 
-echo $HOSTNAME;
-echo $USERNAME;
-echo $PASSWORD;
-echo $DATABASE;
-
 $con = mysqli_connect($HOSTNAME, $USERNAME, $PASSWORD, $DATABASE);
 
 if ($con) {
